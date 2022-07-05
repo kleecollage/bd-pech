@@ -9,7 +9,7 @@
 </head>
 <body>
 <h2>Formulario de alumnos</h2>
-    <form action="accion.php" mehod="post" >
+    <form action="insert.php" mehod="post" >
         <ul>
             <li> 
                 <label for="name">Nombre:</label>
