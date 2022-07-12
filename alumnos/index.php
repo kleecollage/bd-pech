@@ -33,14 +33,19 @@ $alumnos = get_all_alumnos($connect) ;
             <td><?php echo $fila ['id'] ; ?> </td>
             <td><?php echo $fila ['nombre'] ; ?> </td>
             <td><?php echo $fila ['apellido'] ; ?> </td>
-            <td><?php echo $fila ['teléfono'] ; ?> </td>
+            <td><?php echo $fila ['telefono'] ; ?> </td>
             <td><?php echo $fila ['correo'] ; ?> </td>
             <td><?php echo $fila ['licenciatura'] ; ?> </td>
             <td><?php echo $fila ['cuatrimestre'] ; ?> </td>
             <td><?php echo $fila ['status'] ; ?> </td>
             <td> <a href= "detail.php?id=<?php echo $fila['id'] ; ?> " > Detalle </a> </td>
+<<<<<<< Updated upstream
             <td> <a href="#">Editar</a></td>
             <td> <a href="#">Eliminar</a></td>
+=======
+            <td> <a href="formulario.php"> Editar </a></td>
+            <td> <a href="update.php?id=<?php echo $fila['id'] ; ?> "> Eliminar </a></td>
+>>>>>>> Stashed changes
         </tr>
         <?php
         }

@@ -36,8 +36,13 @@ $resultado = mysqli_query($connect, $consulta);
             <td><?php echo $fila ['correo'] ; ?> </td>
             <td><?php echo $fila ['status'] ; ?> </td>
             <td> <a href= "detail.php?id=<?php echo $fila['id'] ; ?> " > Detalle </a> </td>
+<<<<<<< Updated upstream
             <td> <a href="#">Editar</a></td>
             <td> <a href="#">Eliminar</a></td>
+=======
+            <td> <a href="formulario.php"> Editar </a></td>
+            <td> <a href="update.php?id=<?php echo $fila['id'] ; ?> "> Eliminar </a></td>
+>>>>>>> Stashed changes
         </tr>
         <?php
         }
@@ -45,7 +50,7 @@ $resultado = mysqli_query($connect, $consulta);
         </tbody>
         <tfoot>
             <tr>
-                <th><a href="../"> <button>Regresar</button> </a> </th>
+                <th><a href="../"> <button> Regresar </button> </a> </th>
             </tr>
         </tfoot>
     </table>

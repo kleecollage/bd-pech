@@ -55,6 +55,7 @@
                             </div>
                         </div>
 
+<<<<<<< Updated upstream
                         <div class="form-group">
                             <div class="d-grid gap-2 col-6 mx-auto">
                                 <button type="submit" class="btn btn-primary btn-lg">Submit</button>
@@ -69,5 +70,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+=======
+    header('location: index.php') ;
+
+    // print_r($_POST)
+>>>>>>> Stashed changes
 
 </html>
