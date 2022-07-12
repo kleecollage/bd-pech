@@ -36,8 +36,6 @@ function get_profesores($connect, $id){
     $resultado = mysqli_query($connect, $consulta) ;
     return $resultado ;
 }
-<<<<<<< Updated upstream
-=======
 
 function insertar_alumnos($nombre, $apellido, $telefono, $correo, $licenciatura, $cuatri, $status){
     global $connect ;
@@ -80,5 +78,5 @@ function eliminar_materia($connect, $id){
     $resultado = mysqli_query($connect, $consulta) ;
     return $resultado ;
 }
->>>>>>> Stashed changes
+
 ?>
