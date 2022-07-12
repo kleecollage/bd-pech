@@ -32,7 +32,7 @@ $resultado = mysqli_query($connect, $consulta);
             <td><?php echo $fila ['cuatrimestre'] ; ?> </td>
             <td><?php echo $fila ['licenciatura'] ; ?> </td>
             <td> <a href= "detail.php?id=<?php echo $fila['id'] ; ?> " > Detalle </a> </td>
-            <td> <a href="#">Editar</a></td>
+            <td> <a href="formulario.php">Editar</a></td>
             <td> <a href="#">Eliminar</a></td>
         </tr>
         <?php
