@@ -57,4 +57,26 @@ function insertar_profesores($fname, $lname, $phone, $email){
     $consulta = "INSERT INTO profesores(nombre, apellido, telefono, correo) VALUES('$fname', '$lname', '$phone', '$email')" ;
     $resultado = mysqli_query($connect, $consulta) ;
 }
+
+function eliminar_profesor($connect, $id){
+    global $connect ;
+    $consulta = "DELETE FROM profesores WHERE id = $id" ;
+    $resultado = mysqli_query($connect, $consulta) ;
+    return $resultado ;
+}
+
+function eliminar_alumno($connect, $id){
+    global $connect ;
+    $consulta = "DELETE FROM alumnos WHERE id = $id" ;
+    $resultado = mysqli_query($connect, $consulta) ;
+    return $resultado ;
+}
+
+function eliminar_materia($connect, $id){
+    global $connect ;
+    $consulta = "DELETE FROM materias WHERE id = $id" ;
+    $resultado = mysqli_query($connect, $consulta) ;
+    return $resultado ;
+}
+
 ?>

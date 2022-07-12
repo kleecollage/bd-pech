@@ -1,7 +1,7 @@
 <?php
 require_once("../lib/functions.php") ;
 $id = $_GET['id'] ;
-$users = get_all_materias($connect) ;
+$users = get_materias($connect, $id) ;
 $resultado = get_materias($connect, $id) ;
 $materia =mysqli_fetch_array($resultado) ;
 ?>

@@ -1,7 +1,7 @@
 <?php
 require_once("../lib/functions.php") ;
 $id = $_GET['id'] ;
-$users = get_all_profesores($connect) ;
+$users = get_profesores($connect, $id) ;
 $resultado = get_profesores($connect, $id) ;
 $profesor =mysqli_fetch_array($resultado) ;
 ?>
@@ -37,7 +37,7 @@ $profesor =mysqli_fetch_array($resultado) ;
         <td><?php echo $fila ['id'] ; ?> </td>
             <td><?php echo $fila ['nombre'] ; ?> </td>
             <td><?php echo $fila ['apellido'] ; ?> </td>
-            <td><?php echo $fila ['teléfono'] ; ?> </td>
+            <td><?php echo $fila ['telefono'] ; ?> </td>
             <td><?php echo $fila ['correo'] ; ?> </td>
             <td><?php echo $fila ['status'] ; ?> </td>
             <!-- <td> <a href="#">Detalle</a></td>

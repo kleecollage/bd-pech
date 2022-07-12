@@ -10,8 +10,7 @@
 
     insertar_profesores($fname, $lname, $phone, $email);
 
-    // header('location: index.php') ;
+    header('location: index.php') ;
 
-    print_r($_POST)
-
+    // print_r($_POST)
 ?>
